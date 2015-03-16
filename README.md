@@ -1,2 +1,2 @@
-# DCubeCram
-DCube Cram application
+# ConfLoopbackXamarin
+SupInfo Conference sample with Loopback &Xamarin
