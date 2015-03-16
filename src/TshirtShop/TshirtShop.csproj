@@ -54,20 +54,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\TshirtShop.Model\TshirtShop.Model.csproj">
-      <Project>{073EE95E-3EAE-4548-B274-9D201F0A70AD}</Project>
-      <Name>TshirtShop.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\TshirtShop.Service\TshirtShop.Service.csproj">
-      <Project>{A931AC1D-EEE2-4D7F-BEBB-5C7CE0BD2680}</Project>
-      <Name>TshirtShop.Service</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\TshirtShop.Service\TshirtShop.Service.Implement\TshirtShop.Service.Implement.csproj">
-      <Project>{C5D3D134-526D-4590-90E8-6A0D02FB4C3F}</Project>
-      <Name>TshirtShop.Service.Implement</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Page\" />
     <Folder Include="ViewModel\" />
     <Folder Include="IoC\" />

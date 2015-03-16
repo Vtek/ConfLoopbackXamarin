@@ -35,11 +35,11 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\TshirtShop.Model\TshirtShop.Model.csproj">
+    <ProjectReference Include="..\TshirtShop.Model\TshirtShop.Model.csproj">
       <Project>{073EE95E-3EAE-4548-B274-9D201F0A70AD}</Project>
       <Name>TshirtShop.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TshirtShop.Service.csproj">
+    <ProjectReference Include="..\TshirtShop.Service\TshirtShop.Service.csproj">
       <Project>{A931AC1D-EEE2-4D7F-BEBB-5C7CE0BD2680}</Project>
       <Name>TshirtShop.Service</Name>
     </ProjectReference>
