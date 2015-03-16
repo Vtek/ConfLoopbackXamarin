@@ -1,0 +1,30 @@
+{
+  "name": "Product",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Reference": {
+      "type": "string",
+      "required": true
+    },
+    "IsMen": {
+      "type": "boolean",
+      "required": true
+    },
+    "Size": {
+      "type": "string",
+      "required": true
+    },
+    "ImageFile": {
+      "type": "any"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

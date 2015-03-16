@@ -1,0 +1,23 @@
+{
+  "name": "Order",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "ClientId": {
+      "type": "string",
+      "required": true
+    },
+    "ProductId": {
+      "type": "string",
+      "required": true
+    },
+    "OrderDate": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
