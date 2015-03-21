@@ -15,6 +15,10 @@
       "type": "boolean",
       "required": true
     },
+    "Category": {
+      "type": "string",
+      "required": true
+    },
     "Size": {
       "type": "string",
       "required": true
