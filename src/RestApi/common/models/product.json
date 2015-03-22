@@ -16,7 +16,8 @@
       "required": true
     },
     "imageFile": {
-      "type": "any"
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],
