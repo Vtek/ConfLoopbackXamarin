@@ -3,27 +3,19 @@
   "base": "PersistedModel",
   "idInjection": true,
   "properties": {
-    "Name": {
+    "name": {
       "type": "string",
       "required": true
     },
-    "Reference": {
+    "reference": {
       "type": "string",
       "required": true
     },
-    "IsMen": {
-      "type": "boolean",
-      "required": true
-    },
-    "Category": {
+    "category": {
       "type": "string",
       "required": true
     },
-    "Size": {
-      "type": "string",
-      "required": true
-    },
-    "ImageFile": {
+    "imageFile": {
       "type": "any"
     }
   },

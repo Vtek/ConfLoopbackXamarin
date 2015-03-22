@@ -3,16 +3,24 @@
   "base": "PersistedModel",
   "idInjection": true,
   "properties": {
-    "ClientId": {
+    "clientId": {
       "type": "string",
       "required": true
     },
-    "ProductId": {
+    "productId": {
       "type": "string",
       "required": true
     },
-    "OrderDate": {
+    "orderDate": {
       "type": "date",
+      "required": true
+    },
+	"isMen": {
+      "type": "boolean",
+      "required": true
+    },
+    "size": {
+      "type": "string",
       "required": true
     }
   },

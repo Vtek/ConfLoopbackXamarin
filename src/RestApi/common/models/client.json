@@ -3,27 +3,27 @@
   "base": "PersistedModel",
   "idInjection": true,
   "properties": {
-    "FirstName": {
+    "firstName": {
       "type": "string",
       "required": true
     },
-    "LastName": {
+    "lastName": {
       "type": "string",
       "required": true
     },
-    "Adress": {
+    "adress": {
       "type": "string",
       "required": true
     },
-    "City": {
+    "city": {
       "type": "string",
       "required": true
     },
-    "ZipCode": {
+    "zipCode": {
       "type": "string",
       "required": true
     },
-    "Country": {
+    "country": {
       "type": "string",
       "required": true
     }
