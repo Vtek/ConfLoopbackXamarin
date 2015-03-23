@@ -57,6 +57,16 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\..\packages\Xamarin.Forms.1.3.1.6296\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\..\packages\Portable.Ninject.3.3.1\lib\monoandroid\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\..\packages\Microsoft.Net.Http.2.2.29\lib\monoandroid\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\..\packages\Microsoft.Net.Http.2.2.29\lib\monoandroid\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />

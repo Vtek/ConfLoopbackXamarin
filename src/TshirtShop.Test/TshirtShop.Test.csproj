@@ -3,12 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{A931AC1D-EEE2-4D7F-BEBB-5C7CE0BD2680}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>TshirtShop.Service</RootNamespace>
-    <AssemblyName>TshirtShop.Service</AssemblyName>
-    <TargetFrameworkProfile>Profile78</TargetFrameworkProfile>
+    <ProjectGuid>{A054B590-CF65-42A4-9C91-043275961117}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TshirtShop.Test</RootNamespace>
+    <AssemblyName>TshirtShop.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -19,7 +17,7 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
+    <Externalconsole>true</Externalconsole>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -27,21 +25,28 @@
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
+    <Externalconsole>true</Externalconsole>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="IRestDataService.cs" />
-    <Compile Include="IProductService.cs" />
-    <Compile Include="IClientService.cs" />
-    <Compile Include="IOrderService.cs" />
-    <Compile Include="IConfigurationService.cs" />
+    <Reference Include="System" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\TshirtShop.Model\TshirtShop.Model.csproj">
       <Project>{073EE95E-3EAE-4548-B274-9D201F0A70AD}</Project>
       <Name>TshirtShop.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TshirtShop.Service\TshirtShop.Service.csproj">
+      <Project>{A931AC1D-EEE2-4D7F-BEBB-5C7CE0BD2680}</Project>
+      <Name>TshirtShop.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TshirtShop.Service.Implement\TshirtShop.Service.Implement.csproj">
+      <Project>{C5D3D134-526D-4590-90E8-6A0D02FB4C3F}</Project>
+      <Name>TshirtShop.Service.Implement</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

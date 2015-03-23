@@ -1,9 +1,9 @@
 ﻿namespace TshirtShop.Model
 {
 	/// <summary>
-	/// T shirt.
+	/// Product.
 	/// </summary>
-	public sealed class Tshirt
+	public class Product
 	{
 		/// <summary>
 		/// Gets or sets the name.
@@ -18,10 +18,22 @@
 		public string Reference { get; set; }
 
 		/// <summary>
+		/// Gets or sets the category.
+		/// </summary>
+		/// <value>The category.</value>
+		public string Category { get; set; }
+
+		/// <summary>
 		/// Gets or sets the image file.
 		/// </summary>
 		/// <value>The image file.</value>
-		public string ImageUrl { get; set; }
+		public string ImageFile { get; set; }
+
+		/// <summary>
+		/// Gets or sets the identifier.
+		/// </summary>
+		/// <value>The identifier.</value>
+		public string Id { get; set; }
 	}
 }
 

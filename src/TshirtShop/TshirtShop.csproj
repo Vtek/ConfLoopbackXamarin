@@ -38,6 +38,10 @@
     <Compile Include="ViewModel\ViewModel.cs" />
     <Compile Include="ViewModel\ViewModelFactory.cs" />
     <Compile Include="ViewModel\RootViewModel.cs" />
+    <Compile Include="Page\OrderPage.cs" />
+    <Compile Include="Page\AddressPage.cs" />
+    <Compile Include="Page\LoadingPage.cs" />
+    <Compile Include="ViewModel\OrderViewModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.3.1.6296\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.3.1.6296\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -49,6 +53,9 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\..\packages\Xamarin.Forms.1.3.1.6296\lib\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\..\packages\Portable.Ninject.3.3.1\lib\portable-net4+sl5+wp8+win8+wpa81+monotouch+monoandroid+Xamarin.iOS\Ninject.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -58,5 +65,19 @@
     <Folder Include="ViewModel\" />
     <Folder Include="IoC\" />
     <Folder Include="IoC\Module\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TshirtShop.Model\TshirtShop.Model.csproj">
+      <Project>{073EE95E-3EAE-4548-B274-9D201F0A70AD}</Project>
+      <Name>TshirtShop.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TshirtShop.Service\TshirtShop.Service.csproj">
+      <Project>{A931AC1D-EEE2-4D7F-BEBB-5C7CE0BD2680}</Project>
+      <Name>TshirtShop.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TshirtShop.Service.Implement\TshirtShop.Service.Implement.csproj">
+      <Project>{C5D3D134-526D-4590-90E8-6A0D02FB4C3F}</Project>
+      <Name>TshirtShop.Service.Implement</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
